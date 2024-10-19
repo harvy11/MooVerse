@@ -5,7 +5,9 @@
     border-radius: 16px;
     padding: 0.5rem;
 }
-
+h5 {
+    font-family: Bungee Inline Static;
+}
 .navbar-brand {
     font-weight: 500;
     color: aqua;
@@ -14,21 +16,24 @@
 }
 
 .Login-button {
-    background-color:#28b463 ;
+    background-color:#f8c471 ;
     color: white;
     font-size: 14px;
     padding: 8px 20px;
     border-radius: 50px;
     text-decoration: none;
     transition: 0.3s background-color;
+    border: none;
 }
 
 .Login-button:hover {
-    background-color: aqua;
+    background-color: transparent;
+    border: 2px solid #f8c471;
+    color: #f8c471;
 }
 
 .offcanvas{
-    background-color: rgb(57, 69, 57);
+    background-color: #f8c471 ;
 }
 
 .navbar-toggler {
@@ -48,7 +53,7 @@
 }
 
 .nav-link:hover, .nav-link.active{
-    color:#28b463 ;
+    color:#f8c471;
 }
 @media(min-width: 991px){
     .nav-link::before {
@@ -59,7 +64,7 @@
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: #28b463 ;
+        background-color: #f8c471 ;
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
@@ -91,5 +96,118 @@
     height: 100vh;
     z-index: 1;
     position: relative;
+}
+
+
+
+.about {
+    padding: 40px 20px;
+    background-color: #cb7b7b;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-container > div {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-container p {
+    text-align: justify;
+}
+
+
+
+
+.portfolio {
+    padding: 40px 20px;
+    background-color: #af3b3b; 
+}
+
+.portfolio-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.portfolio-image {
+    max-width: 300px; 
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-right: 20px; 
+}
+
+.portfolio-description {
+    font-size: 1.1rem; 
+    line-height: 1.5; 
+    flex: 1; 
+}
+
+
+
+
+.contact {
+    background-color: #707b7c; 
+    color: #ccd1d1; 
+    padding: 20px; 
+    height: 350px; 
+    overflow: hidden; 
+}
+
+.contact h2 {
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+
+.contact-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+.contact-info {
+    flex: 1; 
+    margin-right: 20px; 
+    text-align: center;
+}
+
+.contact-form {
+    flex: 1; 
+}
+
+.contact-info-list {
+    list-style-type: none; 
+    padding-left: 200px; 
+    display: flex;
+}
+
+.contact-info-list li {
+    margin-right: 200px; 
+}
+
+.contact-divider {
+    border: none; 
+    height: 1px; 
+    background-color: #ccd1d1; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
 }
 
