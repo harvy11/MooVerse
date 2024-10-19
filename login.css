@@ -1,0 +1,81 @@
+
+form {
+    border: 3px solid #f1f1f1;
+    align-items: center;
+    padding: 70px;
+    margin: 70px 300px 70px 300px;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 50px;
+  }
+  
+
+  input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s background-color;
+    border-radius: 20px;
+  }
+  
+.loginbtn:hover {
+    background-color: aquamarine;
+}
+
+  
+.cancelbtn:hover {
+    background-color: #ec7e7e;
+    animation-duration: 3s;
+}
+
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+
+  .container {
+    padding: 16px;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
