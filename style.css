@@ -1,22 +1,31 @@
 .navbar {
-    background-color:transparent;
-    height: 80px; 
+    background-color: transparent;
+    height: 80px;
     margin: 20px;
     border-radius: 16px;
     padding: 0.5rem;
 }
-h5 {
-    font-family: Bungee Inline Static;
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+h5 {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .navbar-brand {
     font-weight: 500;
     color: aqua;
     font-size: 24px;
-    transition: 0.3s color;
 }
 
 .Login-button {
-    background-color:#f8c471 ;
+    background-color: #f8c471;
     color: white;
     font-size: 14px;
     padding: 8px 20px;
@@ -32,8 +41,8 @@ h5 {
     color: #f8c471;
 }
 
-.offcanvas{
-    background-color: #f8c471 ;
+.offcanvas {
+    background-color: #f8c471;
 }
 
 .navbar-toggler {
@@ -41,7 +50,8 @@ h5 {
     font-size: 1.25rem;
 }
 
-.navbar-toggler:focus, .btn-close:focus {
+.navbar-toggler:focus,
+.btn-close:focus {
     box-shadow: none;
     outline: none;
 }
@@ -52,10 +62,12 @@ h5 {
     position: relative;
 }
 
-.nav-link:hover, .nav-link.active{
-    color:#f8c471;
+.nav-link:hover,
+.nav-link.active {
+    color: #f8c471;
 }
-@media(min-width: 991px){
+
+@media (min-width: 991px) {
     .nav-link::before {
         content: "";
         position: absolute;
@@ -64,26 +76,58 @@ h5 {
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: #f8c471 ;
+        background-color: #f8c471;
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
 
-    .nav-link:hover::before, .nav-link:active::before{
+    .nav-link:hover::before,
+    .nav-link:active::before {
         width: 100%;
         visibility: visible;
     }
 }
 
 .hero-section {
-    background: url(anime-background.jpg) no-repeat center;
+    background: url(anime-sunset1.jpg);
     background-size: cover;
     width: 100%;
-  
+}
+
+.hero-section h1 {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-size: 120px;
+}
+
+.hero-section h2 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 80px;
+    }
+    .hero-section h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 50px;
+    }
+    .hero-section h2 {
+        font-size: 24px;
+        text-align: left;
+    }
 }
 
 .hero-section::before {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     content: "";
     position: absolute;
     top: 0;
@@ -98,11 +142,9 @@ h5 {
     position: relative;
 }
 
-
-
 .about {
     padding: 40px 20px;
-    background-color: #cb7b7b;
+    background-image: linear-gradient(180deg, #f5b041, #f39c12, #d35400);
 }
 
 .about-container {
@@ -114,12 +156,13 @@ h5 {
 
 .about-container > div {
     background-color: #ffffff;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
     flex: 1 1 30%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #d68910;
 }
 
 .about-container h3 {
@@ -127,87 +170,133 @@ h5 {
     margin-bottom: 10px;
 }
 
+.engagement p {
+    padding-bottom: 25px;
+}
+
 .about-container p {
     text-align: justify;
 }
 
-
-
-
 .portfolio {
     padding: 40px 20px;
-    background-color: #af3b3b; 
+    background-image: linear-gradient(180deg, #d35400, #ba4a00, #6e2c00);
 }
 
 .portfolio-container {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    max-width: 800px; 
-    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .portfolio-image {
-    max-width: 300px; 
-    width: 100%; 
-    height: auto; 
-    border-radius: 8px; 
-    margin-right: 20px; 
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
 }
 
 .portfolio-description {
-    font-size: 1.1rem; 
-    line-height: 1.5; 
-    flex: 1; 
+    font-size: 1.1rem;
+    line-height: 1.5;
+    flex: 1;
+    text-align: justify;
 }
 
-
-
-
 .contact {
-    background-color: #707b7c; 
-    color: #ccd1d1; 
-    padding: 20px; 
-    height: 350px; 
-    overflow: hidden; 
+    background-color: #707b7c;
+    color: #ccd1d1;
+    padding: 20px;
+    height: auto;
 }
 
 .contact h2 {
-    text-align: center; 
-    margin-bottom: 10px; 
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .contact-container {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .contact-info {
-    flex: 1; 
-    margin-right: 20px; 
+    flex: 1;
+    margin-right: 20px;
     text-align: center;
 }
 
 .contact-form {
-    flex: 1; 
+    flex: 1;
 }
 
 .contact-info-list {
-    list-style-type: none; 
-    padding-left: 200px; 
+    list-style-type: none;
+    padding-left: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact-info-list li {
-    margin-right: 200px; 
+    margin-right: 20px;
 }
 
 .contact-divider {
-    border: none; 
-    height: 1px; 
-    background-color: #ccd1d1; 
-    margin-top: 10px; 
-    margin-bottom: 10px; 
+    border: none;
+    height: 1px;
+    background-color: #ccd1d1;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+@media (max-width: 991px) {
+    .navbar {
+        margin: 10px;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .about-container > div {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    .contact-info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-info-list li {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-description {
+        font-size: 0.9rem;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .Login-button {
+        font-size: 12px;
+    }
+}
