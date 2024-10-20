@@ -1,0 +1,103 @@
+
+
+.navbar {
+    background-color: #343a40;
+    border-radius: 50px;
+    margin: 20px ;
+}
+
+.logo-img {
+    height: 100px;
+}
+
+.web-title {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.offcanvas-logo {
+    height: 100px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.offcanvas-title {
+    font-size: 18px;
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f8c471;
+}
+
+
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #f8c471;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link:active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.hero-section {
+    background: url(./Images/homepage-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 50px;
+}
+
+
+.hero-section >h2 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.mySlides {display:none;}
+
