@@ -1,8 +1,10 @@
 body {
-  font-family: Arial, sans-serif; 
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
   margin: 0; 
   padding: 0;
-  background-color: #f9f9f9;
+  background: url(./anime-sunset1.jpg) no-repeat center;
 }
 
 .menu {
@@ -13,7 +15,7 @@ body {
 }
 
 form {
-  border: 3px solid #f1f1f1;
+  background-color: rgba(248, 214, 159, 0.8);
   padding: 40px; 
   margin: 20px;
   box-shadow: 10px 10px 10px black;
@@ -29,10 +31,11 @@ input[type=email], input[type=password] {
   display: inline-block;
   border: 1px solid #f8c471;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 button {
-  background-color:#f8c471;
+  background-color: #f1b048;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -45,8 +48,8 @@ button {
 
 .loginbtn:hover {
   background-color: transparent;
-  color: #f8c471;
-  border: 2px solid #f8c471;
+  color: #dc7633;
+  border: 2px solid #dc7633;
 }
 
 .cancelbtn {
@@ -104,10 +107,10 @@ span.psw {
 
   .cancelbtn {
       width: auto; 
+  }
 
   .action-container {
       flex-direction: column; 
       align-items: flex-start; 
   }
-}
 }
